@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author Nick
+ * @author Nick Chin
  */
 public class Main {
 
