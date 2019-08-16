@@ -57,15 +57,15 @@ public class Main {
             System.out.println("There are 0 numeric elements in input.\n");
         } else {
 //            otherwise do calculation for any amount of arguments
-            double min = nums[0];
-            double max = nums[0];
-            double avg = 0;
+            double min = nums[0]; // set initial min as first element
+            double max = nums[0]; // set initial max as first element
+            double avg = 0; // set initial avg as 0.0
             for (double i : nums) {
-                min = Math.min(min, i);
-                max = Math.max(max, i);
-                avg += i;
+                min = Math.min(min, i); // take min of current min and i
+                max = Math.max(max, i); // take max of current max and i
+                avg += i; // aggregate all values of nums
             }
-            avg = avg / nums.length;
+            avg = avg / nums.length; // calc average
             System.out.println("Minimum: " + min);
             System.out.println("Maximum: " + max);
             System.out.println("Average: " + avg + "\n");
