@@ -42,15 +42,11 @@ public class MinMaxAvg {
      * calculate the min, max, and avg of the numbers. If not, it will throw an
      * error and print accordingly.
      */
-    public static void main(String[] args) {
+    public static void main(double[] args) {
         // try catch block to ensure errors are caught for incorrect input
         try {
-            // take the args array and parse them into a double array
-            double[] nums = Arrays.stream(args).mapToDouble(Double::parseDouble)
-                    .toArray();
-            
             // call calc to calculate the min max avg
-            calc(nums);
+            calc(args);
         } catch (Exception e) {
             System.err.println("Not all inputs could be parsed as doubles.");
             System.err.println("Please input an array of only doubles.");
